@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Puisi Nusantara | Membaca Jiwa Lewat Kata</title>
+    <!-- Font & Ikon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tombol Navigasi: Kembali ke tab sebelumnya (history back) & Tombol Khusus (di pojok kanan atas) -->
+    <div class="action-buttons" id="actionButtons">
+        <button class="nav-btn back-btn" id="backHistoryBtn" title="Kembali ke halaman sebelumnya">
+            <i class="fas fa-arrow-left"></i> <span>Kembali</span>
+        </button>
+        <button class="nav-btn special-btn" id="specialResetBtn" title="Kembali ke tab awal (Beranda)">
+            <i class="fas fa-home"></i> <span>Beranda</span>
+        </button>
+    </div>
+
+    <main class="container">
+        <!-- Bagian Header -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1>📖 Perjalanan Puisi</h1>
+                <p>Merangkai rasa, menyentuh kalbu. Kenali puisi lebih dalam melalui tema-tema puitis.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/id/104/500/300" alt="Suasana puisi dan buku klasik" class="floating-img">
+            </div>
+        </header>
+
+        <!-- Galeri Mini / Gambar tambahan (responsive) -->
+        <div class="gallery-section">
+            <h2><i class="fas fa-images"></i> Inspirasi Visual</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card"><img src="https://picsum.photos/id/20/300/200" alt="Alam dan puisi"><div class="caption">Alam dalam Puisi</div></div>
+                <div class="gallery-card"><img src="https://picsum.photos/id/30/300/200" alt="Tulisan tangan"><div class="caption">Aksara Puitis</div></div>
+                <div class="gallery-card"><img src="https://picsum.photos/id/42/300/200" alt="Membaca puisi"><div class="caption">Resitasi</div></div>
+            </div>
+        </div>
+
+        <!-- Daftar Topik Puisi (interaktif, ketika diklik menampilkan penjelasan utama) -->
+        <section class="topics-section">
+            <h2><i class="fas fa-feather-alt"></i> Pilih Topik Puisi</h2>
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topik akan di-render via JS, namun tetap tersedia struktur -->
+            </div>
+        </section>
+
+        <!-- Area Penjelasan Utama (detail puisi) -->
+        <div class="explanation-area" id="explanationArea">
+            <div class="explanation-card">
+                <div class="explanation-header">
+                    <i class="fas fa-book-open"></i>
+                    <h3 id="explanationTitle">Selamat datang di Dunia Puisi</h3>
+                </div>
+                <div id="explanationContent" class="explanation-content">
+                    <p>✨ Klik salah satu topik puisi di atas untuk membaca penjelasan lengkapnya. Pelajari unsur, jenis, dan makna yang tersirat dalam setiap aliran puisi.</p>
+                    <p><strong>Puisi</strong> adalah bentuk karya sastra yang mengungkapkan perasaan dan pikiran dengan bahasa yang indah dan penuh makna. Dari puisi lama hingga kontemporer, setiap bait menyimpan jiwa.</p>
+                    <div class="sample-quote">"Aku ingin mencintaimu dengan sederhana; seperti kata yang tak sempat diucapkan kayu kepada api yang menjadikannya abu." — Sapardi Djoko Damono</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Puisi Nusantara | Merangkai kata, Meresapi rasa</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
